@@ -34,6 +34,12 @@ sudo dnf install gnome-tweaks
 #Move Wallpapers to Pictures
 sudo mv Wall_papers/ ~/Pictures/
 
+#Node, n and PNPM
+sudo dnf install nodejs
+sudo npm install -g n
+corepack enable
+sudo n stable
+
 #Terminal
 sudo mv Terminal/.bashrc ~ 
 sudo mv Terminal/starship.toml ~/.config
