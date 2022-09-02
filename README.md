@@ -1,2 +1,4 @@
 # Fedora-Setup
-My Script to setup a new Fedora enviroment.
+---
+### My Script to setup a new Fedora enviroment.
+

@@ -1,0 +1,7 @@
+- The folder goes to ~/Home/.themes
+
+- The CSS archive goes to ~/Home/.config/gtk-4.0
+
+______________________________________________________
+
+- After that, put with tweaks and restart.
