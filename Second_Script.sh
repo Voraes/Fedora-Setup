@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 #Install Flatpak
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo -y
+sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo 
 
 #Install all Flatpaks Apps
 flatpak install flathub com.mattjakeman.ExtensionManager -y
@@ -20,6 +20,7 @@ sudo dnf install chromium -y
 #Theme
 sudo mkdir ~/.themes
 sudo mv THEME/Catppuccin-Latte/ ~/.themes
+sudo mkdir ~/.config/gtk-4.0
 sudo mv THEME/Catppuccin-Latte-B.css ~/.config/gtk-4.0/
 
 #Icon Theme
@@ -37,13 +38,12 @@ sudo mv Wall_papers/ ~/Pictures/
 #Node, n and PNPM
 sudo dnf install nodejs -y
 sudo npm install -g n
-corepack enable
-sudo n stable
+sudo corepack enable
 
 #Terminal
+sudo curl -sS https://starship.rs/install.sh | sh 
 sudo mv Terminal/.bashrc ~ 
 sudo mv Terminal/starship.toml ~/.config
 
 #Exit
 exit
-
